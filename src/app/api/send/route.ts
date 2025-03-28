@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { name, email, message } = body
 
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Tu Portafolio <onboarding@resend.dev>',
       to: 'tu-correo-personal@gmail.com', // Tu correo
       subject: 'Nuevo Mensaje de Contacto',
