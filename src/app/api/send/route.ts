@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
 
     const { error } = await resend.emails.send({
       from: 'Tu Portafolio <onboarding@resend.dev>',
-      to: 'tu-correo-personal@gmail.com', // Tu correo
+      to: 'carol.vi28@gmail.com', // Tu correo
       subject: 'Nuevo Mensaje de Contacto',
       html: `
         <h1>Nuevo Mensaje de Contacto</h1>
