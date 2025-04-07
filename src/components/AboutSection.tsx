@@ -34,14 +34,17 @@ export default function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
               Sobre Mí
             </h2>
-            
+
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p className="text-lg">
-                Soy una desarrolladora Full Stack apasionada por crear soluciones digitales innovadoras y escalables. Con más de 5 años de experiencia en el desarrollo web, me especializo en tecnologías modernas como React, Next.js y Node.js.
+                Desarrolladora Full Stack con experiencia en transformar desafíos tecnológicos en soluciones
+                innovadoras. He trabajado en diversos proyectos, desde aplicaciones web para gestión deportiva
+                hasta sistemas de recursos humanos, utilizando tecnologías como Laravel, Vue.js, React y Node.js.
               </p>
-              
+
               <p className="text-lg">
-                Mi enfoque se centra en construir aplicaciones web de alto rendimiento que no solo sean técnicamente sólidas, sino también intuitivas y accesibles para los usuarios.
+                Mi trayectoria incluye liderazgo técnico, integración de inteligencia artificial y optimización
+                de sistemas en la nube, con un enfoque en crear soluciones escalables y de alto rendimiento.
               </p>
 
               <div className="pt-4">
@@ -52,51 +55,115 @@ export default function AboutSection() {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
-                      React & Next.js
+                      Frontend
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
-                      TypeScript
+                      Vue.js, React & Angular
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
-                      Node.js
+                      Vuetify, Bootstrap
                     </li>
                   </ul>
                   <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Mobile
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Flutter (iOS & Android)
+                    </li>
+                  </ul>
+                </div>
+                <div className="grid grid-cols-2 gap-4 mt-4">
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Backend
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Laravel & PHP
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Node.js & Nest.js
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      GraphQL
+                    </li>
+                  </ul>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Cloud & DevOps
+                    </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
                       AWS & Azure
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
-                      PostgreSQL
+                      Docker
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
-                      Docker
+                      CI/CD
+                    </li>
+                  </ul>
+                </div>
+                <div className="grid grid-cols-2 gap-4 mt-4">
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Bases de Datos
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      MySQL & PostgreSQL
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Redis
+                    </li>
+                  </ul>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Inteligencia Artificial
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      GPT-3.5 & GPT-4
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
+                      Azure AI Services
                     </li>
                   </ul>
                 </div>
               </div>
 
               <div className="pt-6">
-                <a 
-                  href="/cv.pdf" 
+                <a
+                  href="/cv.pdf"
                   target="_blank"
                   className="btn-primary inline-flex items-center"
                 >
                   Descargar CV
-                  <svg 
-                    className="w-5 h-5 ml-2" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
                       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                     />
                   </svg>

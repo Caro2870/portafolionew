@@ -23,19 +23,19 @@ export default function HeroSection() {
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-              Software Engineer | Full Stack Developer
+              Ingeniera de Software | Desarrolladora Full Stack
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              Apasionada por la tecnología y con un enfoque proactivo en la resolución de problemas. 
-              Experta en el diseño e implementación de soluciones innovadoras para enfrentar desafíos 
-              empresariales complejos.
+              Transformo ideas en código, problemas en soluciones. Creo tecnología que hace la diferencia,
+              conectando innovación con resultados reales. Mi objetivo: desarrollar productos que simplifiquen
+              la vida de las personas y impulsen el crecimiento de los negocios.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="mailto:carol.vi28@gmail.com"
                 className="btn-primary"
               >
-                Contáctame
+                Colaborar
               </a>
               <a
                 href="#projects"
