@@ -1,57 +1,63 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #3498db;
-  --secondary: #2ecc71;
-  --accent: #e74c3c;
-}
+@layer base {
+  body {
+    @apply bg-background-light text-text-light transition-colors duration-200;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-}
+  .dark body {
+    @apply bg-background-dark text-text-dark;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #2980b9;
-    --secondary: #27ae60;
-    --accent: #c0392b;
-    --text: #3a3535;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--text);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-lg font-semibold
+           shadow-soft transition-all duration-200
+           hover:bg-primary-600 hover:shadow-soft-lg
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+           dark:focus:ring-offset-background-dark;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary-500 text-primary-500 px-6 py-3 rounded-lg font-semibold
+           shadow-soft transition-all duration-200
+           hover:bg-primary-500 hover:text-white hover:shadow-soft-lg
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+           dark:text-primary-400 dark:border-primary-400
+           dark:hover:bg-primary-400 dark:hover:text-background-dark
+           dark:focus:ring-offset-background-dark;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-soft p-6
+           transition-all duration-200
+           hover:shadow-soft-lg
+           dark:bg-gray-800 dark:shadow-none
+           dark:hover:bg-gray-700;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+  }
 }
 
-/* Gradientes y animaciones */
-.gradient-bg {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Efectos de hover y transiciones */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

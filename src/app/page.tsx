@@ -1,19 +1,23 @@
-import ContactSection from '@/components/Contacto'
-import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
-import ProjectShowcase from '@/components/ProjectShowcase'
+import AboutSection from '@/components/AboutSection'
 import ServicesSection from '@/components/ServicesSection'
-// Importa otras secciones
+import ProjectsSection from '@/components/ProjectsSection'
+import ExperienceSection from '@/components/ExperienceSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
+import EducationSection from '@/components/EducationSection'
+import ContactSection from '@/components/Contacto'
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <main className="relative">
       <HeroSection />
+      <AboutSection />
       <ServicesSection />
-      <ProjectShowcase />
+      <ProjectsSection />
+      <ExperienceSection />
+      <TestimonialsSection />
+      <EducationSection />
       <ContactSection />
-      {/* Otras secciones */}
-    </div>
+    </main>
   )
 }

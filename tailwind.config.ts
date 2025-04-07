@@ -9,10 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gray: {
-          900: '#111827', // Define explícitamente el color que estás usando
+        primary: {
+          DEFAULT: '#3498db',
+          light: '#5dade2',
+          dark: '#2980b9'
         }
-      }
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
+      },
     },
   },
   plugins: [],

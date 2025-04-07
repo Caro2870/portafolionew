@@ -1,0 +1,8 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f5f5f5"/>
+  <rect x="100" y="100" width="1000" height="600" rx="20" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <circle cx="600" cy="400" r="150" fill="#e0e0e0"/>
+  <line x1="450" y1="400" x2="750" y2="400" stroke="#999" stroke-width="4"/>
+  <line x1="600" y1="250" x2="600" y2="550" stroke="#999" stroke-width="4"/>
+  <text x="600" y="750" font-family="Arial" font-size="24" text-anchor="middle" fill="#666">Sistema de Gestión de Torneos</text>
+</svg> 
