@@ -6,8 +6,11 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 export default function HeroSection() {
   return (
-    <div className="section min-h-screen flex items-center bg-gradient-to-b from-gray-50/50 to-white dark:from-gray-900/50 dark:to-background-dark">
-      <div className="container-custom">
+    <div className="section min-h-screen flex items-center relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-200 via-white to-accent-200 dark:from-gray-900 dark:via-background-dark dark:to-gray-800"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,135,255,0.2),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,230,184,0.2),transparent_70%)]"></div>
+      <div className="container-custom relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

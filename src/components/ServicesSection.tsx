@@ -35,9 +35,12 @@ export default function ServicesSection() {
   return (
     <section 
       id="services" 
-      className="section bg-gradient-to-b from-background-light to-gray-50/50 dark:from-background-dark dark:to-gray-900/50"
+      className="section relative overflow-hidden"
     >
-      <div className="container-custom">
+      <div className="absolute inset-0 bg-gradient-to-bl from-accent-200 via-white to-primary-200 dark:from-gray-900 dark:via-background-dark dark:to-gray-800"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,230,184,0.2),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(0,135,255,0.2),transparent_70%)]"></div>
+      <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
             Especialidades

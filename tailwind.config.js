@@ -48,7 +48,7 @@ module.exports = {
         },
         // Colores de fondo
         background: {
-          light: '#ffffff',
+          light: '#fafafa',
           dark: '#0f172a',
         },
         // Colores de texto
@@ -56,6 +56,17 @@ module.exports = {
           light: '#1e293b',
           dark: '#f1f5f9',
         },
+        // Nuevos colores para gradientes
+        gradient: {
+          light: {
+            from: '#ffffff',
+            to: '#e2e8f0',
+          },
+          dark: {
+            from: '#0f172a',
+            to: '#1e293b',
+          }
+        }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

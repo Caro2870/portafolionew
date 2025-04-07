@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-background-light text-text-light transition-colors duration-200;
+    @apply bg-gradient-to-br from-gradient-light-from via-white to-gradient-light-to text-text-light transition-colors duration-200 min-h-screen;
   }
 
   .dark body {
-    @apply bg-background-dark text-text-dark;
+    @apply bg-gradient-to-br from-gradient-dark-from via-gray-900 to-gradient-dark-to text-text-dark;
   }
 
   h1, h2, h3, h4, h5, h6 {
